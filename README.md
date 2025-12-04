@@ -1,2 +1,7 @@
 # Correlation-plot
-R script for generating clustered correlation matrix using corrplot.
+
+This repository contains an R script that:
+  Computes a correlation matrix
+  Creates a color-coded and hierarchically clustered correlation plot
+  Adds optional customization settings
+
