@@ -1,3 +1,6 @@
+# install.packages("corrplot")
+library(corrplot)
+
 my_data <- read.csv(file.choose())
 
 head(my_data)
@@ -11,8 +14,7 @@ mat <-cor(d)
 # Creating custom color palette
 my_cols <- colorRampPalette(c("orange", "#FFFFFF", "green"))(200)
 
-library(corrplot)
-
+# Plot
 corrplot(
   mat,
   method = "color",       # "color", "circle", "square", "number", "pie", "shade", "ellipse"
@@ -48,3 +50,4 @@ corrplot(
   
   mar = c(0,0,0,0)
 )
+
